@@ -1,0 +1,123 @@
+/* Variabel Warna & Style */
+:root {
+    --text: #1a1a1a;
+    --bg: #fff;
+    --bg-2: #ffffff;
+    --link: #0900bd;
+    --link-visited: #6905a7;
+    --line: #b7b7b7;
+    --font: IBM Plex Mono !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --text: #eaeaea;
+      --bg: #141414;
+      --bg-2: #2a2a2a;
+      --link: #83abf0;
+      --link-visited: #d583f0;
+      --line: #3d3d3d;
+    }
+}
+
+/* --------- */
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: var(--font);
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+button {
+	padding: 10px 20px 10px 20px;
+    background-color: rgb(0, 88, 239);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-family: var(--font);
+}
+
+button:hover {
+    background-color: rgb(53, 125, 250);
+}
+
+a {
+    color: var(--link)
+}
+
+a:visited {
+    color: var(--link-visited)
+}
+
+button:active {
+    background-color: rgb(1, 74, 200);
+}
+
+input {
+    padding: 10px;
+    background-color: var(--bg-2);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--text);
+    font-family: var(--font);
+}
+
+input[type=text], input[type=password] {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type=radio], input[type=checkbox] {
+    background-color: var(--bg-2);
+    color: red;
+}
+
+input[type=file] {
+    background-color: #0000 !important;
+    border: none;
+}
+
+select {
+    padding: 10px;
+    background-color: var(--bg-2);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--text);
+    font-family: var(--font);
+}
+
+fieldset {
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+}
+
+#header {
+	background-color: #eee;
+	clear: both;
+	color: #555;
+	font-size: 1.78em;
+	padding: 0.7ex 0.7ex 0.7ex 0.7em;
+}
+
+img {
+    max-height: 5em;
+}
+
+.file-picker-border {
+    border: 2px dashed var(--line);
+}
+
+h1::before {
+    content: "# ";
+}
+
+h2::before {
+    content: "## ";
+}
