@@ -121,3 +121,8 @@ h1::before {
 h2::before {
     content: "## ";
 }
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
